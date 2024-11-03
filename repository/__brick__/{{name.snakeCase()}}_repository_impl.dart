@@ -10,4 +10,9 @@ class {{name.pascalCase()}}RepositoryImpl implements {{name.pascalCase()}}Reposi
   final PrologHttpClient _httpClient;
 
   const {{name.pascalCase()}}RepositoryImpl(this._httpClient);
+
+  @override
+  Future get() async {
+    final response = await _httpClient.get(_baseUrl);
+  }
 }
