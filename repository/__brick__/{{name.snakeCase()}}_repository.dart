@@ -1,3 +1,3 @@
-abstract class {{name.snakeCase()}}Repository {
+abstract class {{name.pascalCase()}}Repository {
 
 }
